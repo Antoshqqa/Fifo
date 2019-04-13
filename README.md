@@ -38,4 +38,8 @@
 * docker rmi postgres:latest  
 * docker volume rm pgdata  
    
-  
+### Пример корректных команд:  
+* newproduct Samsung Galaxy Ace 3
+* purchase Samsung Galaxy Ace 3 15 35000 14.04.2019
+* demand Samsung Galaxy Ace 3 10 50000 14.04.2019
+* salesreport Samsung Galaxy Ace 3 14.04.2019
