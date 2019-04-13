@@ -1,11 +1,11 @@
 # Fifo
 
-Данные хранятся в PostgreSQL, для того, чтобы развернуть СУБД нужно:
-- В терминале выполнить команды:
-  --sudo -i
-  --docker volume create pgdata
-  --docker run --name pgStatic -v pgdata:/var/lib/postgresql/data -p 5435:5432 
-                     \-e POSTGRES_PASSWORD=mysecretpassword -d postgres:latest
+#Данные хранятся в PostgreSQL, для того, чтобы развернуть СУБД нужно:  #
+##В терминале выполнить команды:  ##
+###sudo -i  ###  
+###docker volume create pgdata  ###
+  docker run --name pgStatic -v pgdata:/var/lib/postgresql/data -p 5435:5432 
+                     -e POSTGRES_PASSWORD=mysecretpassword -d postgres:latest
     Примечание: Вместо пароля mysecretpassword и порта 5435 можно указать свои значения, они в последующем
     будут использованы Hibernate для подключения к БД
   --docker exec -it pgStatic bash
