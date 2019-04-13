@@ -5,7 +5,7 @@
 ##### В терминале выполнить команды:  
 * sudo -i   
 * docker volume create pgdata  
-* docker run --name pgStatic -v pgdata:/var/lib/postgresql/data -p 5435:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres:latest  
+* docker run --rm --name pgStatic -v pgdata:/var/lib/postgresql/data -p 5435:5432 -e POSTGRES_PASSWORD=mysecretpassword -d postgres:latest  
     ###### Примечание: Вместо пароля mysecretpassword и порта 5435 можно указать свои значения, они в последующем 
     ###### будут использованы Hibernate для подключения к БД  
 * docker exec -it pgStatic bash  
@@ -35,7 +35,6 @@
 ##### В терминале выполнить:  
 * sudo -i  
 * docker stop pgStatic  
-* docker rm pgStatic  
 * docker rmi postgres:latest  
 * docker volume rm pgdata  
    
