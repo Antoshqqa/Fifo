@@ -11,7 +11,7 @@
 * docker exec -it pgStatic bash  
 * su - postgres  
 * psql  
-* create database fifo (либо любое другое название)  
+* create database fifo; (либо любое другое название)  
 * \q  
 * exit  
 * exit  
