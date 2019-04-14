@@ -27,7 +27,8 @@
 ##### Для запуска проекта необходимо, чтобы в директории с jar-файлом находилась директория ./config, содержащая  
 ##### конфигурационный файл hibernate.cfg.xml
 * В терминале перейти в директорию с исходным кодом и выполнить команду:  
-    mvn clean package assembly:single  
+    (Если уже была развернута БД и изменен hibernate.cfg.xml) mvn clean package assembly:single  
+    (Если нет) mvn -DskipTests=true clean package assembly:single  
 * cp target/Fifo-jar-with-dependencies.jar .
 * Запустить проект командой    java -jar Fifo-jar-with-dependencies.jar
 
